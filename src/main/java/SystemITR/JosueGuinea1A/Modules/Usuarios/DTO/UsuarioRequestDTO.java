@@ -11,7 +11,7 @@ import java.util.Date;
 public class UsuarioRequestDTO {
 
     @NotBlank
-    private long id_CLiente;
+    private long id_usuario;
 
     @NotBlank
     private String nombre;

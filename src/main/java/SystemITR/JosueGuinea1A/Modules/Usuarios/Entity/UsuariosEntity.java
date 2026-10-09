@@ -1,8 +1,8 @@
 package SystemITR.JosueGuinea1A.Modules.Usuarios.Entity;
 
 
+import SystemITR.JosueGuinea1A.Modules.Usuarios.DTO.UsuarioRequestDTO;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -14,12 +14,12 @@ import java.util.Date;
 @Setter
 @ToString
 @Table(name= "USUARIOS")
-public class usuariosEntity {
+public class UsuariosEntity extends UsuarioRequestDTO {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
-    private long id_CLiente;
+    private long id_Usuario;
 
     @Column(name ="nombre")
     private String nombre;
